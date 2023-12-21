@@ -101,6 +101,7 @@ main .main-input input{
 /* icono de busqueda del imput  */
 main .main-input .material-symbols-outlined{
     margin-left: 15px;
+    margin-right: 10px;
 }
 /* icono microfono del input de busqueda  */
 main .main-input .micro-icon{
@@ -109,8 +110,8 @@ main .main-input .micro-icon{
     background-position: center;
     background-size: contain;
 
-    width: 25px;
-    height: 25px;
+    width: 18px;
+    height: 18px;
 
     margin-right: 15px;
 }
@@ -121,8 +122,85 @@ main .main-input .camara-icon{
     background-position: center;
     background-size: contain;
 
-    width: 25px;
-    height: 25px;
+    width: 18px;
+    height: 18px;
     margin-right: 15px;
 
+}
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+
+    
+}
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    /* margin-right: 15px; */
+
+
+
+}
+main .main-buttons button:nth-child(1){
+    margin-right: 15px;
+}
+main .main-buttons button:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+
+}
+
+/* #################### FOOTER #################### */
+footer{
+    width: 100%;
+    /* height: 50px; */
+    position: absolute;
+    bottom: 0;
+
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0; /*esto recetea el padding left que trae por defectos las etiquetas ul*/
+}
+
+footer .footer-left{
+    justify-self: left;
+    grid-row: 2 / 2;
+}
+footer .footer-rigth{
+    justify-self: right;
+    grid-row: 2 / 2;
+
+}
+
+footer ul li a{
+    margin: 10px;
+    color: #5f6368;
+
+}
+footer p{
+    grid-row:1;
+    /* margin: 10px; */
+    padding: 15px 30px;
 }
